@@ -5,7 +5,7 @@ const SingleProject = ({reponame,starc,forkc,lan,link,image}) => {
   return (
     <div  style={{border:"1px solid teal",padding:"15px",borderRadius:"7px"}}>
         <div>
-            <img width="100%" src={image}/>
+            <img alt="mycompany"width="100%" src={image}/>
         </div>
         <a href={link}><h3>{reponame}</h3></a>
         <h3>{lan}</h3>

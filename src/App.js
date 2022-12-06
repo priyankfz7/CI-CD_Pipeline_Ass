@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import SingleProject from './singleProject';
@@ -40,7 +39,7 @@ function App() {
 
       </div>
       {loading ? <div align="center">
-        <img width="500px" src="https://flevix.com/wp-content/uploads/2019/12/Quarter-Circle-Loading-Image-1.gif" />
+        <img alt="loader" width="500px" src="https://flevix.com/wp-content/uploads/2019/12/Quarter-Circle-Loading-Image-1.gif" />
       </div> : <div style={{ display: "grid", textAlign: "center", width: "75%", margin: "auto", gap: "40px", gridTemplateColumns: "1fr 1fr 1fr 1fr" }}>
         {data.map((p) => <SingleProject key={p.id} reponame={p.name} starc={p.stargazers_count} forkc={p.forks_count} lan={p.language} link={p.clone_url} image={p.owner.avatar_url} />)}
       </div>}
