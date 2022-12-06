@@ -1,5 +1,5 @@
 
-name: git_app
+name: gi_app
 #triggers
 on:
   push:
